@@ -1,0 +1,186 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "stack": "Stack",
+    "projects": "Projects",
+    "contact": "Contact",
+    "label": "Main navigation",
+    "language": "Language",
+    "spanish": "Switch to Spanish",
+    "english": "Switch to English"
+  },
+  "whatsapp": {
+    "label": "Contact via WhatsApp",
+    "unavailable": "WhatsApp contact coming soon"
+  },
+  "hero": {
+    "eyebrow": "Full-Stack Developer · Santiago, Chile",
+    "role": "Full-Stack Developer",
+    "title": "Software engineering and development of web platforms, AI integrations, SaaS products, automations, and mobile applications.",
+    "cta": "View projects",
+    "scroll": "Explore portfolio"
+  }
+  ,
+  "footer": {
+    "brandDesc": "Diego Diaz is a Full-Stack Developer focused on building digital products with clarity, performance, and visual judgment.",
+    "sections": {
+      "navigation": "Navigation",
+      "coreServices": "Specialties"
+    },
+    "links": {
+      "about": "About Diego",
+      "services": "Technical stack",
+      "contact": "Contact",
+      "development": "Modern frontend",
+      "integrations": "Integrations",
+      "consulting": "UI architecture"
+    },
+    "readyTitle": "Ready to talk about your project?",
+    "contactLabel": "Contact",
+    "location": "Santiago, Chile",
+    "madeWith": "Built by Diego Diaz"
+  }
+  ,
+  "pages": {
+    "about": {
+      "title": "About me",
+      "p1": "Diego Diaz Medina, a Full-Stack Developer with studies in engineering. I am proactive, enthusiastic about technology, and self-taught.",
+      "p2": "I have worked for telecommunications and service companies. I consider myself responsible, with a strong passion for programming and building solutions. I use AI agents such as Claude and agentic frameworks such as Hermes to develop applications more efficiently. I am always interested in learning new things in the field. I also enjoy sports and movies. 🙂",
+      "videoTitle": "How I work",
+      "videoDesc": "I explore the problem, design the interface, build with intention and leave a foundation ready to grow."
+    },
+    "projects": {
+      "heading": "My first projects",
+      "intro": "Two simple projects showcasing my first steps building web experiences: a classic online store and a landing page.",
+      "cardLabel": "Live demo",
+      "cta": "Visit project",
+      "integrationsLabel": "APIs & integrations",
+      "galleryLabel": "More screenshots (click to enlarge)",
+      "openImageLabel": "Enlarge image",
+      "closeImageLabel": "Close image",
+      "badges": {
+        "personal": "Personal project · Not in production",
+        "client-production": "Client project · In production"
+      },
+      "items": [
+        {
+          "title": "Taller Biciclistas",
+          "category": "Web platform · Store & services",
+          "kind": "client-production",
+          "href": "https://www.biciclistas.cl",
+          "image": "/projects/biciclistas.png",
+          "imageAlt": "Taller Biciclistas homepage",
+          "gallery": [
+            { "src": "/projects/biciclistas-productos.png", "alt": "Taller Biciclistas product catalog" },
+            { "src": "/projects/biciclistas-carrito.png", "alt": "Shopping cart and quote summary" },
+            { "src": "/projects/biciclistas-admin.png", "alt": "Taller Biciclistas administration panel" },
+            { "src": "/projects/biciclistas-whatsapp.png", "alt": "WhatsApp contact form" },
+            { "src": "/projects/biciclistas-opiniones.png", "alt": "Customer reviews for the workshop" }
+          ],
+          "summary": "A web platform for bicycle services and retail, built with Next.js, React, TypeScript, and Supabase.",
+          "description": "A web platform for a bicycle workshop, with an admin panel to manage the store, products, site content, and users. It supports workshop order management and gives each customer access to their service history, as well as marketing and password-reset emails. Features include Mercado Libre-referenced products, an online store with Mercado Pago payments, WhatsApp contact, and sign-in with Google OAuth or a custom registration form. Customers can download a PDF summary of their completed work. It also integrates Google Analytics 4, a Google reviews widget, and image management with Supabase Storage, including image compression and resizing on upload. The site includes optimized SEO and received an A+ rating on Security Headers.",
+          "technologies": ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS 4", "shadcn/ui", "Radix UI", "Supabase", "Server Actions", "Route Handlers", "React Hook Form", "Zod"],
+          "integrations": ["Mercado Pago", "Mercado Libre OAuth", "Google OAuth", "Google Analytics 4", "Cloudflare Turnstile", "WhatsApp", "Resend + React Email (test)", "Elfsight"]
+        },
+        {
+          "title": "Classic e-commerce",
+          "category": "Online store · React",
+          "kind": "personal",
+          "href": "https://diegodzm.github.io/ecomercetemplate/",
+          "image": "/projects/ecommerce.png",
+          "imageAlt": "Classic e-commerce project homepage",
+          "gallery": [],
+          "summary": "A classic-style online store, developed as an e-commerce project.",
+          "description": "A functional e-commerce website with a shopping cart, showcasing common online store components and features.",
+          "technologies": ["React.js", "MySQL", "React Bootstrap", "CSS", "HTML5"],
+          "integrations": []
+        },
+        {
+          "title": "Landing page",
+          "category": "Landing page · React",
+          "kind": "personal",
+          "href": "https://diegodzm.github.io/landingpagereact/",
+          "image": "/projects/react-landing.png",
+          "imageAlt": "React landing page project homepage",
+          "gallery": [],
+          "summary": "A simple landing page focused on presenting an offering on the web.",
+          "description": "A basic landing page showcasing common components and features used on this type of website.",
+          "technologies": ["React.js", "MySQL", "React Bootstrap", "CSS", "HTML5"],
+          "integrations": []
+        }
+      ]
+    },
+    "stack": {
+      "eyebrow": "Tools and judgment",
+      "heading": "Technical stack",
+      "summary": "I choose tools that help solve the problem: maintainable interfaces, reliable data and products that feel fast.",
+      "items": [
+        { "title": "Frontend", "description": "Reactive, accessible interfaces cared for down to the last detail, including cross-platform experiences.", "tools": ["React.js", "Next.js", "TypeScript", "Flutter"] },
+        { "title": "UI engineering", "description": "Consistent visual systems that turn design into reusable components.", "tools": ["Tailwind CSS", "Framer Motion", "shadcn/ui", "Radix UI"] },
+        { "title": "Backend", "description": "Product logic, authentication, APIs, and data management connected securely.", "tools": ["Node.js", "Python", "SQLAlchemy", "Auth", "PostgreSQL", "MySQL", "Supabase", "Firebase", "REST APIs"] },
+        { "title": "Design", "description": "Visual decisions focused on hierarchy, readability and purpose.", "tools": ["Canva", "Figma"] },
+        { "title": "AI & assistants", "description": "AI tools that support research and help accelerate solution development.", "tools": ["Claude", "Gemini", "Google AI", "ChatGPT"] },
+        { "title": "Workflow", "description": "An iterative process that keeps goals and progress visible.", "tools": ["Git", "Testing", "Deploy"] }
+      ]
+    },
+    "contact": {
+      "heading": "Let's build something useful",
+      "sub": "Have an idea, a product in progress or an interface that needs a new perspective? Write to me.",
+      "contactInfoTitle": "Contact information",
+      "email": "hola@diegodiaz.dev",
+      "note": "I’ll reply as soon as possible to understand the context, goal and next step.",
+      "placeholderName": "Name",
+      "placeholderEmail": "Email",
+      "placeholderMessage": "Tell me about your project...",
+      "submit": "Send Message"
+    },
+    "services": {
+      "pageTitle": "Digital solutions and web development",
+      "pageSummary": "Design, development and digital strategy for projects that need a strong, modern and functional online presence.",
+      "cards": [
+        {
+          "title": "Professional Landing Page",
+          "price": "120.000 CLP - 150.000 CLP",
+          "summary": "Website for presenting services and contact, scalable initial product.",
+          "features": [
+            { "name": "Modern UI/UX Design", "description": "Professional aesthetics aligned with your brand." },
+            { "name": "Responsive Design (Mobile)", "description": "Consistent visibility across devices." },
+            { "name": "SEO Optimized", "description": "Improve positioning and visibility on Google." },
+            { "name": "SSL Certificate", "description": "HTTPS to protect visitor privacy and ensure secure browsing." },
+            { "name": "WhatsApp Integration", "description": "Contact button with anti-bot measures." },
+            { "name": "Annual Support & Hosting", "description": "Hosting management and security updates for 12 months." },
+            { "name": "Domain Included (.cl/.com)", "description": "Domain purchase and setup management." },
+            { "name": "CMS", "description": "Content management panel." }
+          ]
+        },
+        {
+          "title": "Platforms and Web Systems",
+          "price": "From $350,000 CLP",
+          "summary": "Development of internal systems, control panels, process automation and AI integrations.",
+          "features": [
+            { "name": "Self-managed and secure administrative panel.", "description": "" },
+            { "name": "Custom modules based on the business workflow (history, statuses, clients).", "description": "" },
+            { "name": "Payment gateway integration and report/document generation.", "description": "" },
+            { "name": "Scalable architecture optimized for performance.", "description": "" },
+            { "name": "Usage training and initial technical support.", "description": "" }
+          ]
+        },
+        {
+          "title": "Maintenance & Optimization",
+          "price": "Monthly Plan / Retainer",
+          "summary": "Maintenance, server management, updates and ongoing support for your platform.",
+          "features": [
+            { "name": "Availability monitoring and periodic data backups.", "description": "" },
+            { "name": "Security updates and infrastructure patches.", "description": "" },
+            { "name": "Server management and cost included.", "description": "" },
+            { "name": "Minor content changes and priority technical support.", "description": "" }
+          ]
+        }
+      ],
+      "cardAction": "What's included",
+      "cardChooseNote": "Choose this card to see the detailed inclusions.",
+      "modalClose": "Close"
+    }
+  }
+}

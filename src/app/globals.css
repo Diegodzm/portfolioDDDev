@@ -1,10 +1,11 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-
 @theme {
+  --font-space-grotesk: "Space Grotesk", sans-serif;
+  
   --animate-gradient-x: gradient-x 10s ease infinite;
- --animate-forge-glow: forge-glow 3s ease-in-out infinite;
+  --animate-forge-glow: forge-glow 3s ease-in-out infinite;
 
   @keyframes gradient-x {
     0% { background-position: 0% 50%; }
@@ -12,77 +13,97 @@
     100% { background-position: 0% 50%; }
   }
   @keyframes forge-glow {
-    0%, 100% { filter: drop-shadow(0 0 0px rgba(255, 165, 0, 0)); }
-    50% { filter: drop-shadow(0 0 15px rgba(255, 165, 0, 0.6)); }
+    0%, 100% { filter: drop-shadow(0 0 0px rgba(168, 85, 247, 0)); }
+    50% { filter: drop-shadow(0 0 15px rgba(168, 85, 247, 0.6)); }
   }
-    --font-montserrat: var(--font-montserrat);
+
+  @keyframes whatsapp-wave {
+    0% { opacity: 0.38; transform: scale(0.9); }
+    100% { opacity: 0; transform: scale(2.8); }
+  }
+
 }
 
-/* Opcional: Si quieres que TODOS los h1, h2, h3 usen automáticamente esta tipografía */
-h1, h2, h3 {
-  font-family: var(--font-montserrat), sans-serif;
+.whatsapp-swell::before,
+.whatsapp-swell::after {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border: 2px solid rgba(134, 255, 178, 0.65);
+  border-radius: inherit;
+  box-shadow: 0 0 16px rgba(134, 255, 178, 0.3);
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+  animation: whatsapp-wave 2.4s ease-out infinite;
 }
 
-.logo-image {
-  image-rendering: auto;
+.whatsapp-swell::after {
+  animation-delay: 1.2s;
 }
 
-
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-swell::before,
+  .whatsapp-swell::after {
+    animation: none;
+    opacity: 0;
+  }
+}
 
 @layer base {
   :root {
-    /* Brand colors */
-    --primary: 271 100% 50%;      /* #7F00FF */
-
-    /* Page background */
-    --background: 271 35% 12%;   /* fondo profesional oscuro morado */
-
-   --navbar-start: 271 35% 8%;   /* Negro morado profundo */
-  --navbar-mid: 271 45% 15%;    /* Violeta industrial oscuro */
-  --navbar-end: 271 50% 25%;
-
-    --foreground: 0 0% 88%;      /* #E0E0E0 */
-
-    /* Supporting grayscale tones */
-    --background-2: 0 0% 10%;    /* #181818 */
-    --muted: 0 0% 20%;           /* darker gray */
-    --muted-foreground: 0 0% 88%;
-    --border: 0 0% 25%;
-
-    /* Whites / metallic */
-    --white: 0 0% 100%;
-    --silver: 210 8% 88%;
-    --metallic: 210 10% 75%;
-
-    --ring: 271 100% 50%;
-    --card: 0 0% 10%;
-    --card-foreground: 0 0% 88%;
-
-    /* Popovers / overlays */
-    --popover: 0 0% 10%;
-    --popover-foreground: 0 0% 88%;
+    --primary: 271 91% 65%;
+    --background: 261 38% 8%;
+    --foreground: 30 33% 94%;
+    --border: 271 91% 65%;
+    --ring: 271 91% 65%;
   }
 
-  img {
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
-}
-
-  html,
   body {
+    font-family: var(--font-space-grotesk), sans-serif !important;
+  }
+
+  /* Encabezados con Electrolize */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-space-grotesk), sans-serif !important;
+  }
+
+  html {
     background: hsl(var(--background));
     color: hsl(var(--foreground));
-  }
-
-  a {
-    color: inherit;
+    overflow-x: hidden;
   }
 }
+
+.electrolize-regular {
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-electrolize, .font-electrolize * {
+  font-family: var(--font-space-grotesk), sans-serif !important;
+}
+
 @layer utilities {
-  .mask-logo {
-    mask-image: url('/webforgedesign/yunk.png');
-    mask-size: contain;
-    mask-repeat: no-repeat;
-    mask-position: center;
+  .portfolio-background-style2 {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-color: #0F0C1B;
+    background-image:
+      radial-gradient(ellipse at 8% 12%, rgba(56, 189, 248, 0.2) 0%, rgba(56, 189, 248, 0.06) 22%, transparent 48%),
+      radial-gradient(ellipse at 88% 82%, rgba(224, 195, 252, 0.18) 0%, rgba(99, 102, 241, 0.08) 24%, transparent 52%),
+      linear-gradient(118deg, #0F0C1B 0%, #130E1A 45%, #1B1526 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .chrome-text-style2 {
+    background: linear-gradient(180deg, #F4EFEA 0%, #E7E0E4 30%, #E0C3FC 50%, #C084FC 70%, #F3E8EE 85%, #5B4A68 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.7)) drop-shadow(0 10px 12px rgba(0, 0, 0, 0.5));
   }
 }

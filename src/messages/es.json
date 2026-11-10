@@ -1,0 +1,186 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "stack": "Stack",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "label": "Navegación principal",
+    "language": "Idioma",
+    "spanish": "Cambiar a español",
+    "english": "Cambiar a inglés"
+  },
+  "whatsapp": {
+    "label": "Contactar por WhatsApp",
+    "unavailable": "Contacto por WhatsApp próximamente"
+  },
+  "hero": {
+    "eyebrow": "Desarrollador Full-Stack · Santiago, Chile",
+    "role": "Desarrollador Full-Stack",
+    "title": "Ingeniería de software y desarrollo de plataformas web, integraciones de IA, SaaS, automatizaciones y aplicaciones móviles.",
+    "cta": "Ver proyectos",
+    "scroll": "Explorar portfolio"
+  }
+  ,
+  "footer": {
+    "brandDesc": "Diego Diaz es Desarrollador Full-Stack enfocado en construir productos digitales con claridad, rendimiento y criterio visual.",
+    "sections": {
+      "navigation": "Navegación",
+      "coreServices": "Especialidades"
+    },
+    "links": {
+      "about": "Sobre Diego",
+      "services": "Stack técnico",
+      "contact": "Contacto",
+      "development": "Frontend moderno",
+      "integrations": "Integraciones",
+      "consulting": "Arquitectura UI"
+    },
+    "readyTitle": "¿Hablamos de tu proyecto?",
+    "contactLabel": "Contacto",
+    "location": "Santiago, Chile",
+    "madeWith": "Hecho por Diego Diaz"
+  }
+  ,
+  "pages": {
+    "about": {
+      "title": "Acerca de mí",
+      "p1": "Diego Diaz Medina, programador Full-Stack con estudios en el área de la ingeniería. Soy proactivo, entusiasta de la tecnología y autodidacta.",
+      "p2": "He trabajado en empresas de telecomunicaciones y servicios. Me considero una persona responsable y con vocación por la programación y el desarrollo de soluciones. Utilizo agentes de IA como Claude y estructuras agénticas como Hermes para desarrollar aplicaciones de forma más eficiente. Siempre me interesa aprender cosas nuevas del rubro. También disfruto los deportes y las películas. 🙂",
+      "videoTitle": "Cómo trabajo",
+      "videoDesc": "Exploro el problema, diseño la interfaz, construyo con intención y dejo una base lista para crecer."
+    },
+    "projects": {
+      "heading": "Mis primeros proyectos",
+      "intro": "Dos proyectos sencillos para mostrar mis primeros pasos creando experiencias web: una tienda online clásica y una landing page.",
+      "cardLabel": "Demo en vivo",
+      "cta": "Visitar proyecto",
+      "integrationsLabel": "APIs e integraciones",
+      "galleryLabel": "Más capturas (haz clic para ampliar)",
+      "openImageLabel": "Ampliar imagen",
+      "closeImageLabel": "Cerrar imagen",
+      "badges": {
+        "personal": "Proyecto propio · No está en producción",
+        "client-production": "Proyecto de cliente · En producción"
+      },
+      "items": [
+        {
+          "title": "Taller Biciclistas",
+          "category": "Plataforma web · Tienda y servicios",
+          "kind": "client-production",
+          "href": "https://www.biciclistas.cl",
+          "image": "/projects/biciclistas.png",
+          "imageAlt": "Página principal de Taller Biciclistas",
+          "gallery": [
+            { "src": "/projects/biciclistas-productos.png", "alt": "Catálogo de productos de Taller Biciclistas" },
+            { "src": "/projects/biciclistas-carrito.png", "alt": "Carrito de compras y resumen de cotización" },
+            { "src": "/projects/biciclistas-admin.png", "alt": "Panel de administración de Taller Biciclistas" },
+            { "src": "/projects/biciclistas-whatsapp.png", "alt": "Formulario de contacto por WhatsApp" },
+            { "src": "/projects/biciclistas-opiniones.png", "alt": "Opiniones de clientes del taller" }
+          ],
+          "summary": "Plataforma web para servicios y tienda de bicicletas, desarrollada con Next.js, React, TypeScript y Supabase.",
+          "description": "Plataforma web para un taller de bicicletas con panel de administración para gestionar la tienda, los productos, el contenido del sitio y los usuarios. Permite administrar órdenes de taller y compartir con cada cliente el historial de trabajos realizados, además de enviar correos de marketing y recuperación de contraseña. Incluye productos referenciados de Mercado Libre, tienda online con pagos mediante Mercado Pago, contacto por WhatsApp e inicio de sesión con Google OAuth o registro propio. Los clientes pueden descargar un PDF con el resumen de sus trabajos. También integra analítica con Google Analytics 4, widget de opiniones de Google y gestión de imágenes en Supabase Storage, con compresión y redimensionado al subirlas. Cuenta con SEO optimizado y obtuvo una calificación A+ en Security Headers.",
+          "technologies": ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS 4", "shadcn/ui", "Radix UI", "Supabase", "Server Actions", "Route Handlers", "React Hook Form", "Zod"],
+          "integrations": ["Mercado Pago", "Mercado Libre OAuth", "Google OAuth", "Google Analytics 4", "Cloudflare Turnstile", "WhatsApp", "Resend + React Email (prueba)", "Elfsight"]
+        },
+        {
+          "title": "E-commerce clásico",
+          "category": "Tienda online · React",
+          "kind": "personal",
+          "href": "https://diegodzm.github.io/ecomercetemplate/",
+          "image": "/projects/ecommerce.png",
+          "imageAlt": "Página principal del proyecto E-commerce clásico",
+          "gallery": [],
+          "summary": "Una tienda online de estilo clásico, desarrollada como proyecto de e-commerce.",
+          "description": "Página de e-commerce funcional con carrito de compras, ideal para mostrar componentes y funcionalidades comunes de una tienda online.",
+          "technologies": ["React.js", "MySQL", "React Bootstrap", "CSS", "HTML5"],
+          "integrations": []
+        },
+        {
+          "title": "Landing page",
+          "category": "Landing page · React",
+          "kind": "personal",
+          "href": "https://diegodzm.github.io/landingpagereact/",
+          "image": "/projects/react-landing.png",
+          "imageAlt": "Página principal del proyecto React landing page",
+          "gallery": [],
+          "summary": "Una página de aterrizaje sencilla, enfocada en presentar una propuesta en la web.",
+          "description": "Landing page básica que sirve como ejemplo de componentes y funcionalidades habituales de este tipo de páginas.",
+          "technologies": ["React.js", "MySQL", "React Bootstrap", "CSS", "HTML5"],
+          "integrations": []
+        }
+      ]
+    },
+    "stack": {
+      "eyebrow": "Herramientas y criterio",
+      "heading": "Stack técnico",
+      "summary": "Elijo herramientas que ayudan a resolver el problema: interfaces mantenibles, datos confiables y productos que se sienten rápidos.",
+      "items": [
+        { "title": "Frontend", "description": "Interfaces reactivas, accesibles y cuidadas hasta el último detalle, incluyendo experiencias multiplataforma.", "tools": ["React.js", "Next.js", "TypeScript", "Flutter"] },
+        { "title": "UI engineering", "description": "Sistemas visuales consistentes que convierten diseño en componentes reutilizables.", "tools": ["Tailwind CSS", "Framer Motion", "shadcn/ui", "Radix UI"] },
+        { "title": "Backend", "description": "Lógica de producto, autenticación, APIs y gestión de datos conectadas de forma segura.", "tools": ["Node.js", "Python", "SQLAlchemy", "Auth", "PostgreSQL", "MySQL", "Supabase", "Firebase", "REST APIs"] },
+        { "title": "Diseño", "description": "Decisiones visuales con foco en jerarquía, legibilidad y propósito.", "tools": ["Canva", "Figma"] },
+        { "title": "IA y asistentes", "description": "Herramientas de inteligencia artificial que apoyan la investigación y aceleran el desarrollo de soluciones.", "tools": ["Claude", "Gemini", "Google AI", "ChatGPT"] },
+        { "title": "Workflow", "description": "Un proceso iterativo que mantiene visible el objetivo y el progreso.", "tools": ["Git", "Testing", "Deploy"] }
+      ]
+    },
+    "contact": {
+      "heading": "Construyamos algo útil",
+      "sub": "¿Tienes una idea, un producto en marcha o una interfaz que necesita una nueva mirada? Escríbeme.",
+      "contactInfoTitle": "Información de contacto",
+      "email": "hola@diegodiaz.dev",
+      "note": "Responderé lo antes posible para conocer el contexto, el objetivo y el siguiente paso.",
+      "placeholderName": "Nombre",
+      "placeholderEmail": "Email",
+      "placeholderMessage": "Cuéntame sobre tu proyecto...",
+      "submit": "Enviar Mensaje"
+    },
+    "services": {
+      "pageTitle": "Soluciones digitales y desarrollo web",
+      "pageSummary": "Diseño, desarrollo y estrategia digital para proyectos que necesitan una presencia sólida, moderna y funcional.",
+      "cards": [
+        {
+          "title": "Landing Page Profesional",
+          "price": "120.000 CLP - 150.000 CLP",
+          "summary": "Página web para la presentacion de servicios y contacto, producto inicial escalable.",
+          "features": [
+            { "name": "Diseño UI/UX moderno", "description": "Estética profesional alineada a tu marca." },
+            { "name": "Diseño responsivo (Móvil)", "description": "Visibilidad coherente en cualquier dispositivo." },
+            { "name": "SEO optimizado", "description": "Mejora el posicionamiento y visibilidad en Google." },
+            { "name": "Certificado SSL", "description": "Protocolo HTTPS para proteger la privacidad de tus visitantes y garantizar navegación segura." },
+            { "name": "Integración WhatsApp", "description": "Boton de contacto whatsapp con sistema anti bot." },
+            { "name": "Soporte y Hosting anual", "description": "Gestión de hosting y actualizaciones de seguridad por 12 meses." },
+            { "name": "Incluye dominio .cl o .com", "description": "Gestión de la compra de dominio y configuración." },
+            { "name": "CMS", "description": "Panel de autogestión del contenido de la página." }
+          ]
+        },
+        {
+          "title": "Plataformas y Sistemas Web",
+          "price": "Desde $350.000 CLP",
+          "summary": "Desarrollo de sistemas internos, paneles de control, automatización de procesos e Integraciones IA.",
+          "features": [
+            { "name": "Panel administrativo autogestionable y seguro.", "description": "" },
+            { "name": "Módulos personalizados según el flujo del negocio (historial, estados, clientes).", "description": "" },
+            { "name": "Integración de pasarelas de pago y generación de reportes/documentos.", "description": "" },
+            { "name": "Arquitectura escalable y optimizada en rendimiento.", "description": "" },
+            { "name": "Capacitación de uso y soporte técnico inicial.", "description": "" }
+          ]
+        },
+        {
+          "title": "Mantenimiento & Optimización",
+          "price": "Plan Mensual / Retainer",
+          "summary": "Mantenimiento, servidor, actualizaciones y soporte continuo para tu plataforma.",
+          "features": [
+            { "name": "Monitoreo de disponibilidad y respaldo de datos periódicos.", "description": "" },
+            { "name": "Actualizaciones de seguridad y parches de infraestructura.", "description": "" },
+            { "name": "Gestión y costo del servidor incluido.", "description": "" },
+            { "name": "Modificaciones menores de contenido y soporte técnico prioritario.", "description": "" }
+          ]
+        }
+      ],
+      "cardAction": "Qué incluye",
+      "cardChooseNote": "Elige esta tarjeta para ver el detalle de lo que incluye.",
+      "modalClose": "Cerrar"
+    }
+  }
+}

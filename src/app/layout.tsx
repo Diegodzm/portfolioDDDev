@@ -1,29 +1,26 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/navbar";
-import { Montserrat } from "next/font/google";
-import  { Footer } from "@/components/layout/footer";
+import { Space_Grotesk } from "next/font/google";
+import { Footer } from "@/components/layout/footer";
+import { LanguageProvider } from "@/context/LanguageContext";
+import WhatsAppButton from "@/components/layout/whatsappbutton";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["400", "500", "700", "800"], // Elige los pesos que vas a usar
-  variable: "--font-montserrat",         // Esta variable la leerá Tailwind
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-space-grotesk',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
-  title: "Web Forge Design",
-  description: "Desarrollo y consultoría digital",
+  title: "Diego Diaz Dev | Portfolio",
+  description: "Portfolio de Diego Diaz, Desarrollador Full-Stack especializado en productos digitales.",
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
@@ -32,13 +29,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Navbar />
-        {children}
-        <Footer />
+    <html 
+      lang="es" 
+      className={spaceGrotesk.variable} 
+      style={{ backgroundColor: '#0F0C1B' }}
+    >
+      <head>
+        <link rel="icon" href="/favicon.png" type="image/png" />
+      </head>
+      <body className="relative min-h-screen bg-[#0F0C1B] antialiased">
+        <div className="portfolio-background-style2" aria-hidden="true" />
+
+        <LanguageProvider>
+          <Navbar />
+          <main className="relative z-10 pl-20">{children}</main>
+          <Footer />
+          <WhatsAppButton />
+        </LanguageProvider>
       </body>
     </html>
   );
