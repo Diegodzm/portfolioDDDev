@@ -1,6 +1,7 @@
-﻿"use client"
+"use client"
 
-import { Info, Video } from "lucide-react";
+import Image from "next/image";
+import { Info } from "lucide-react";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 import { useTranslation } from "@/context/LanguageContext";
 
@@ -8,10 +9,8 @@ export default function AboutSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="max-w-7xl mx-auto p-10 grid grid-cols-1 lg:grid-cols-2 gap-10">
-
-      {/* Perfil profesional */}
-      <div className="relative min-h-100 rounded-3xl border border-zinc-800 p-3 bg-zinc-950/50 flex flex-col">
+    <section className="mx-auto flex max-w-7xl flex-col gap-6 px-6 py-12 md:px-10 lg:gap-8">
+      <article className="relative flex min-h-100 flex-col rounded-3xl border border-white/10 bg-zinc-950/60 p-3">
         <GlowingEffect
           blur={0}
           borderWidth={2}
@@ -22,42 +21,41 @@ export default function AboutSection() {
           inactiveZone={0.01}
         />
 
-        <div className="relative flex flex-col grow p-10">
-          <div className="flex flex-row items-center justify-between gap-4 mb-8">
-            {/* Cambiado a h2 para una correcta jerarquía SEO */}
-            <h2 className="text-2xl font-semibold text-white md:text-3xl tracking-tight">
-              {t.pages.about.title}
-            </h2>
-            <div className="rounded-xl border border-stone-800 bg-stone-900 p-3">
-              <Info className="h-6 w-6 text-[#38BDF8]" />
+        <div className="relative flex grow flex-col p-6 sm:p-8 lg:p-10">
+          <div className="mb-8 flex items-start justify-between gap-4">
+            <div>
+              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-sky-300">
+                {t.pages.about.profileLabel}
+              </p>
+              <h2 className="text-3xl font-semibold tracking-tight text-white md:text-4xl">
+                {t.pages.about.title}
+              </h2>
+              <p className="mt-2 text-sm font-medium text-zinc-400">
+                {t.pages.about.name}
+              </p>
+            </div>
+            <div className="rounded-2xl border border-sky-300/20 bg-sky-300/10 p-3">
+              <Info className="h-5 w-5 text-sky-300" aria-hidden="true" />
             </div>
           </div>
 
-          <div className="space-y-6 text-zinc-400 leading-relaxed text-base md:text-lg">
-            <p>
-              {t.pages.about.p1}
-            </p>
-            <p>
-              {t.pages.about.p2}
-            </p>
+          <div className="space-y-5 text-base leading-7 text-zinc-300 md:text-[1.05rem]">
+            <p>{t.pages.about.p1}</p>
+            <p className="text-zinc-400">{t.pages.about.p2}</p>
           </div>
         </div>
-      </div>
+      </article>
 
-      {/* Enfoque de trabajo */}
-      <div className="relative min-h-100 rounded-3xl border border-zinc-800 p-3 bg-zinc-950/50 flex flex-col items-center justify-center border-dashed">
-        <div className="relative flex flex-col items-center justify-center p-10 text-center">
-          <div className="rounded-full bg-zinc-900 border border-zinc-800 p-6 mb-6">
-            <Video className="h-10 w-10 text-zinc-600" />
-          </div>
-          {/* Ajustado a h3 o h3 semántico visual */}
-          <h3 className="text-xl font-semibold text-white mb-2">{t.pages.about.videoTitle}</h3>
-          <p className="text-zinc-500 max-w-sm">
-            {t.pages.about.videoDesc}
-          </p>
-        </div>
-      </div>
-
+      <article className="overflow-hidden rounded-3xl border border-white/10 bg-zinc-950/60 p-3 sm:p-4">
+        <Image
+          src="/devschema.jpg"
+          alt={t.pages.about.schemaAlt}
+          width={1408}
+          height={768}
+          sizes="(max-width: 1280px) 100vw, 1280px"
+          className="h-auto w-full rounded-2xl"
+        />
+      </article>
     </section>
   );
 }

@@ -47,8 +47,9 @@
       "title": "Acerca de mí",
       "p1": "Diego Diaz Medina, programador Full-Stack con estudios en el área de la ingeniería. Soy proactivo, entusiasta de la tecnología y autodidacta.",
       "p2": "He trabajado en empresas de telecomunicaciones y servicios. Me considero una persona responsable y con vocación por la programación y el desarrollo de soluciones. Utilizo agentes de IA como Claude y estructuras agénticas como Hermes para desarrollar aplicaciones de forma más eficiente. Siempre me interesa aprender cosas nuevas del rubro. También disfruto los deportes y las películas. 🙂",
-      "videoTitle": "Cómo trabajo",
-      "videoDesc": "Exploro el problema, diseño la interfaz, construyo con intención y dejo una base lista para crecer."
+      "profileLabel": "Presentación",
+      "name": "Diego Diaz Medina · Desarrollador Full-Stack",
+      "schemaAlt": "Diagrama del proceso de desarrollo web, desde la investigación y arquitectura hasta el despliegue y monitoreo."
     },
     "projects": {
       "heading": "Mis primeros proyectos",
