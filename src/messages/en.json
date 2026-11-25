@@ -52,14 +52,16 @@
       "schemaAlt": "Web development process diagram, from research and architecture through deployment and monitoring."
     },
     "projects": {
-      "heading": "My first projects",
-      "intro": "Two simple projects showcasing my first steps building web experiences: a classic online store and a landing page.",
+      "heading": "Featured projects",
+      "intro": "Personal and client projects showcasing different web experiences: platforms, online stores, and landing pages.",
       "cardLabel": "Live demo",
       "cta": "Visit project",
       "integrationsLabel": "APIs & integrations",
       "galleryLabel": "More screenshots (click to enlarge)",
       "openImageLabel": "Enlarge image",
       "closeImageLabel": "Close image",
+      "previousImageLabel": "Previous image",
+      "nextImageLabel": "Next image",
       "badges": {
         "personal": "Personal project · Not in production",
         "client-production": "Client project · In production"
@@ -77,12 +79,37 @@
             { "src": "/projects/biciclistas-carrito.png", "alt": "Shopping cart and quote summary" },
             { "src": "/projects/biciclistas-admin.png", "alt": "Taller Biciclistas administration panel" },
             { "src": "/projects/biciclistas-whatsapp.png", "alt": "WhatsApp contact form" },
-            { "src": "/projects/biciclistas-opiniones.png", "alt": "Customer reviews for the workshop" }
+            { "src": "/projects/biciclistas-opiniones.png", "alt": "Customer reviews for the workshop" },
+            { "src": "/projects/biciclistas-editor-correos.png", "alt": "Marketing email editor and preview in the administration panel" },
+            { "src": "/projects/biciclistas-productos-mercadolibre.png", "alt": "Bicycles and accessories catalog with Mercado Libre-referenced products" },
+            { "src": "/projects/biciclistas-pago-mercadopago.png", "alt": "Mercado Pago checkout integrated into the store" },
+            { "src": "/projects/biciclistas-checkout.png", "alt": "Contact details and shipping address form during checkout" },
+            { "src": "/projects/biciclistas-gestion-contenidos.png", "alt": "Administration of the homepage carousel and downloadable documents" },
+            { "src": "/projects/biciclistas-detalle-orden.png", "alt": "Workshop order details with customer information and service photos" },
+            { "src": "/projects/biciclistas-orden-taller.png", "alt": "Form for creating a new workshop service order" }
           ],
           "summary": "A web platform for bicycle services and retail, built with Next.js, React, TypeScript, and Supabase.",
           "description": "A web platform for a bicycle workshop, with an admin panel to manage the store, products, site content, and users. It supports workshop order management and gives each customer access to their service history, as well as marketing and password-reset emails. Features include Mercado Libre-referenced products, an online store with Mercado Pago payments, WhatsApp contact, and sign-in with Google OAuth or a custom registration form. Customers can download a PDF summary of their completed work. It also integrates Google Analytics 4, a Google reviews widget, and image management with Supabase Storage, including image compression and resizing on upload. The site includes optimized SEO and received an A+ rating on Security Headers.",
           "technologies": ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS 4", "shadcn/ui", "Radix UI", "Supabase", "Server Actions", "Route Handlers", "React Hook Form", "Zod"],
           "integrations": ["Mercado Pago", "Mercado Libre OAuth", "Google OAuth", "Google Analytics 4", "Cloudflare Turnstile", "WhatsApp", "Resend + React Email (test)", "Elfsight"]
+        },
+        {
+          "title": "CMS landing page & branding",
+          "category": "Landing page · CMS & branding",
+          "kind": "personal",
+          "href": "https://cmsslanding.vercel.app/",
+          "image": "/projects/cmsslanding-home.png",
+          "imageAlt": "Personal landing page with Sanity CMS and color editor",
+          "gallery": [
+            { "src": "/projects/cmsslanding-colors.png", "alt": "Panel for customizing brand colors" },
+            { "src": "/projects/cmsslanding-template.png", "alt": "Preview of the customizable landing page" },
+            { "src": "/projects/cmsslanding-studio.png", "alt": "Sanity Studio for editing landing page content" },
+            { "src": "/projects/cmsslanding-editor.png", "alt": "Editing landing page content in Sanity Studio" }
+          ],
+          "summary": "A personal landing page with content managed in Sanity CMS and a customizable brand preview.",
+          "description": "A personal project demonstrating how a landing page can be managed through Sanity Studio without editing code. It includes an editing panel to customize the page colors and preview different branding options, so prospective clients can explore how their design could look.",
+          "technologies": ["Next.js", "Sanity CMS"],
+          "integrations": []
         },
         {
           "title": "Classic e-commerce",

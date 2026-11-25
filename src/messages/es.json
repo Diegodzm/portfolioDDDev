@@ -52,14 +52,16 @@
       "schemaAlt": "Diagrama del proceso de desarrollo web, desde la investigación y arquitectura hasta el despliegue y monitoreo."
     },
     "projects": {
-      "heading": "Mis primeros proyectos",
-      "intro": "Dos proyectos sencillos para mostrar mis primeros pasos creando experiencias web: una tienda online clásica y una landing page.",
+      "heading": "Proyectos destacados",
+      "intro": "Proyectos personales y de cliente que muestran distintas experiencias web: plataformas, tiendas online y landing pages.",
       "cardLabel": "Demo en vivo",
       "cta": "Visitar proyecto",
       "integrationsLabel": "APIs e integraciones",
       "galleryLabel": "Más capturas (haz clic para ampliar)",
       "openImageLabel": "Ampliar imagen",
       "closeImageLabel": "Cerrar imagen",
+      "previousImageLabel": "Imagen anterior",
+      "nextImageLabel": "Imagen siguiente",
       "badges": {
         "personal": "Proyecto propio · No está en producción",
         "client-production": "Proyecto de cliente · En producción"
@@ -77,12 +79,37 @@
             { "src": "/projects/biciclistas-carrito.png", "alt": "Carrito de compras y resumen de cotización" },
             { "src": "/projects/biciclistas-admin.png", "alt": "Panel de administración de Taller Biciclistas" },
             { "src": "/projects/biciclistas-whatsapp.png", "alt": "Formulario de contacto por WhatsApp" },
-            { "src": "/projects/biciclistas-opiniones.png", "alt": "Opiniones de clientes del taller" }
+            { "src": "/projects/biciclistas-opiniones.png", "alt": "Opiniones de clientes del taller" },
+            { "src": "/projects/biciclistas-editor-correos.png", "alt": "Editor y vista previa de correos de marketing en el panel de administración" },
+            { "src": "/projects/biciclistas-productos-mercadolibre.png", "alt": "Catálogo de bicicletas y accesorios con productos referenciados de Mercado Libre" },
+            { "src": "/projects/biciclistas-pago-mercadopago.png", "alt": "Pantalla de pago de Mercado Pago integrada en la tienda" },
+            { "src": "/projects/biciclistas-checkout.png", "alt": "Formulario de datos de contacto y dirección durante el checkout" },
+            { "src": "/projects/biciclistas-gestion-contenidos.png", "alt": "Administración del carrusel de inicio y documentos descargables" },
+            { "src": "/projects/biciclistas-detalle-orden.png", "alt": "Detalle de una orden de taller con información del cliente y fotos del trabajo" },
+            { "src": "/projects/biciclistas-orden-taller.png", "alt": "Formulario para crear una nueva orden de servicio del taller" }
           ],
           "summary": "Plataforma web para servicios y tienda de bicicletas, desarrollada con Next.js, React, TypeScript y Supabase.",
           "description": "Plataforma web para un taller de bicicletas con panel de administración para gestionar la tienda, los productos, el contenido del sitio y los usuarios. Permite administrar órdenes de taller y compartir con cada cliente el historial de trabajos realizados, además de enviar correos de marketing y recuperación de contraseña. Incluye productos referenciados de Mercado Libre, tienda online con pagos mediante Mercado Pago, contacto por WhatsApp e inicio de sesión con Google OAuth o registro propio. Los clientes pueden descargar un PDF con el resumen de sus trabajos. También integra analítica con Google Analytics 4, widget de opiniones de Google y gestión de imágenes en Supabase Storage, con compresión y redimensionado al subirlas. Cuenta con SEO optimizado y obtuvo una calificación A+ en Security Headers.",
           "technologies": ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS 4", "shadcn/ui", "Radix UI", "Supabase", "Server Actions", "Route Handlers", "React Hook Form", "Zod"],
           "integrations": ["Mercado Pago", "Mercado Libre OAuth", "Google OAuth", "Google Analytics 4", "Cloudflare Turnstile", "WhatsApp", "Resend + React Email (prueba)", "Elfsight"]
+        },
+        {
+          "title": "Landing page CMS y branding",
+          "category": "Landing page · CMS y branding",
+          "kind": "personal",
+          "href": "https://cmsslanding.vercel.app/",
+          "image": "/projects/cmsslanding-home.png",
+          "imageAlt": "Landing page personal con CMS Sanity y editor de colores",
+          "gallery": [
+            { "src": "/projects/cmsslanding-colors.png", "alt": "Panel para personalizar los colores de la marca" },
+            { "src": "/projects/cmsslanding-template.png", "alt": "Vista de la landing page personalizable" },
+            { "src": "/projects/cmsslanding-studio.png", "alt": "Sanity Studio para editar el contenido de la landing page" },
+            { "src": "/projects/cmsslanding-editor.png", "alt": "Edición del contenido de la landing page desde Sanity Studio" }
+          ],
+          "summary": "Landing page personal con contenido editable desde Sanity CMS y una vista previa de marca personalizable.",
+          "description": "Proyecto propio para mostrar cómo una landing page puede gestionarse desde Sanity Studio sin editar el código. Incluye un panel de edición para personalizar los colores de la página y previsualizar distintas propuestas de marca, pensado para que futuros clientes puedan explorar cómo se vería su diseño.",
+          "technologies": ["Next.js", "Sanity CMS"],
+          "integrations": []
         },
         {
           "title": "E-commerce clásico",

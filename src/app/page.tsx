@@ -26,8 +26,8 @@ export default function Home() {
         <p className="mt-8 max-w-2xl text-lg leading-relaxed text-[#D8D1D5] md:text-xl">{t.hero.title}</p>
         <div className="mt-10 flex flex-wrap items-center gap-4">
           <Link href="/proyectos" className="inline-flex items-center gap-2 border border-[#38BDF8] bg-[#38BDF8] px-5 py-3 text-sm font-bold text-[#0F0C1B] shadow-[0_0_20px_rgba(56,189,248,0.25)] transition-transform hover:-translate-y-1 hover:bg-[#60A5FA]">{t.hero.cta}<ArrowUpRight className="h-4 w-4" /></Link>
-          <a href="https://github.com" target="_blank" rel="noreferrer" className="border border-white/15 bg-[#1B1526] p-3 text-[#D8D1D5] transition-colors hover:border-[#E0C3FC] hover:text-[#E0C3FC]" aria-label="GitHub"><Github className="h-5 w-5" /></a>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="border border-white/15 bg-[#1B1526] p-3 text-[#D8D1D5] transition-colors hover:border-[#E0C3FC] hover:text-[#E0C3FC]" aria-label="LinkedIn"><Linkedin className="h-5 w-5" /></a>
+          <a href="https://github.com/Diegodzm" target="_blank" rel="noopener noreferrer" className="border border-white/15 bg-[#1B1526] p-3 text-[#D8D1D5] transition-colors hover:border-[#E0C3FC] hover:text-[#E0C3FC]" aria-label="GitHub"><Github className="h-5 w-5" /></a>
+          <a href="https://www.linkedin.com/in/diegodzm93/" target="_blank" rel="noopener noreferrer" className="border border-white/15 bg-[#1B1526] p-3 text-[#D8D1D5] transition-colors hover:border-[#E0C3FC] hover:text-[#E0C3FC]" aria-label="LinkedIn"><Linkedin className="h-5 w-5" /></a>
         </div>
       </section>
     </main>
