@@ -121,7 +121,7 @@
           "gallery": [],
           "summary": "Una tienda online de estilo clásico, desarrollada como proyecto de e-commerce.",
           "description": "Página de e-commerce funcional con carrito de compras, ideal para mostrar componentes y funcionalidades comunes de una tienda online.",
-          "technologies": ["React.js", "MySQL", "React Bootstrap", "CSS", "HTML5"],
+          "technologies": ["React.js","React Bootstrap", "CSS", "HTML5"],
           "integrations": []
         },
         {
@@ -134,7 +134,7 @@
           "gallery": [],
           "summary": "Una página de aterrizaje sencilla, enfocada en presentar una propuesta en la web.",
           "description": "Landing page básica que sirve como ejemplo de componentes y funcionalidades habituales de este tipo de páginas.",
-          "technologies": ["React.js", "MySQL", "React Bootstrap", "CSS", "HTML5"],
+          "technologies": ["React.js","React Bootstrap", "CSS", "HTML5"],
           "integrations": []
         }
       ]

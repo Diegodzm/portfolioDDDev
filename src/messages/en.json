@@ -121,7 +121,7 @@
           "gallery": [],
           "summary": "A classic-style online store, developed as an e-commerce project.",
           "description": "A functional e-commerce website with a shopping cart, showcasing common online store components and features.",
-          "technologies": ["React.js", "MySQL", "React Bootstrap", "CSS", "HTML5"],
+          "technologies": ["React.js", "React Bootstrap", "CSS", "HTML5"],
           "integrations": []
         },
         {
@@ -134,7 +134,7 @@
           "gallery": [],
           "summary": "A simple landing page focused on presenting an offering on the web.",
           "description": "A basic landing page showcasing common components and features used on this type of website.",
-          "technologies": ["React.js", "MySQL", "React Bootstrap", "CSS", "HTML5"],
+          "technologies": ["React.js","React Bootstrap", "CSS", "HTML5"],
           "integrations": []
         }
       ]
